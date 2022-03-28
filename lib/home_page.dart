@@ -19,7 +19,7 @@ class _HomePageState extends State<HomePage> {
         backgroundColor: Colors.black,
         title: Image.asset(
           "images/instalogo.jpg",
-          height: 38,
+          height: 36,
         ),
         actions: [
           Image.asset(
@@ -368,6 +368,62 @@ class _HomePageState extends State<HomePage> {
                               ),
                             ],
                           ),
+                          SizedBox(
+                            width: 10,
+                          ),
+                          Column(
+                            children: [
+                              SizedBox(
+                                height: 6,
+                              ),
+                              Stack(children: [
+                                Positioned(
+                                  child: Container(
+                                    height: 76,
+                                    width: 76,
+                                    decoration: BoxDecoration(
+                                        shape: BoxShape.circle,
+                                        gradient: LinearGradient(
+                                            begin: Alignment.topRight,
+                                            end: Alignment.bottomLeft,
+                                            colors: [
+                                              Color.fromARGB(255, 248, 2, 96),
+                                              Color.fromARGB(255, 255, 209, 56),
+                                            ])),
+                                  ),
+                                ),
+                                Positioned(
+                                  left: 2.5,
+                                  top: 2.5,
+                                  child: Container(
+                                    height: 71,
+                                    width: 71,
+                                    decoration: BoxDecoration(
+                                      shape: BoxShape.circle,
+                                      color: Colors.black,
+                                    ),
+                                  ),
+                                ),
+                                Positioned(
+                                  left: 2.5,
+                                  top: 3.5,
+                                  child: Image.asset(
+                                    "images/rickpp.png",
+                                    height: 70,
+                                    width: 70,
+                                  ),
+                                )
+                              ]),
+                              SizedBox(
+                                height: 6,
+                              ),
+                              Text(
+                                "ricksanchez",
+                                style: TextStyle(
+                                    color: Colors.white, fontSize: 13),
+                              ),
+                            ],
+                          ),
                         ],
                       );
                     }),
@@ -455,6 +511,238 @@ class _HomePageState extends State<HomePage> {
                   "images/post.jpg",
                   //height: MediaQuery.of(context).size.height * 0.55,
                   fit: BoxFit.fill,
+                ),
+              ),
+              Container(
+                color: Colors.black,
+                child: Row(children: [
+                  Image.asset(
+                    "images/fav.jpg",
+                    height: 48,
+                  ),
+                  Image.asset(
+                    "images/comment.jpg",
+                    height: 38,
+                  ),
+                  Image.asset(
+                    "images/send.jpg",
+                    height: 38,
+                  ),
+                  SizedBox(width: MediaQuery.of(context).size.width * 0.48),
+                  Image.asset(
+                    "images/save.jpg",
+                    height: 39,
+                  ),
+                ]),
+              ),
+              Padding(
+                padding: const EdgeInsets.only(left: 14),
+                child: Container(
+                  height: 88,
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      Text(
+                        "1.155 beğenme",
+                        style: TextStyle(
+                            color: Colors.white,
+                            fontSize: 15,
+                            fontWeight: FontWeight.w600),
+                      ),
+                      SizedBox(
+                        height: 3,
+                      ),
+                      Row(
+                        children: [
+                          Text(
+                            "ricksanchez ",
+                            style: TextStyle(
+                                color: Colors.white,
+                                fontSize: 14,
+                                fontWeight: FontWeight.w600),
+                          ),
+                          Text(
+                            "first post",
+                            style: TextStyle(color: Colors.white, fontSize: 15),
+                          )
+                        ],
+                      ),
+                      SizedBox(
+                        height: 4,
+                      ),
+                      Text(
+                        "28 yorumun tümünü gör",
+                        style: TextStyle(color: Colors.grey, fontSize: 14),
+                      ),
+                      SizedBox(
+                        height: 5,
+                      ),
+                      Text(
+                        "48 dakika önce",
+                        style: TextStyle(color: Colors.grey, fontSize: 10),
+                      ),
+                    ],
+                  ),
+                ),
+              ),
+              SizedBox(
+                height: 6,
+              ),
+              Container(
+                color: Colors.black,
+                height: 48,
+                child: Column(
+                  children: [
+                    Row(
+                      children: [
+                        Padding(
+                          padding: const EdgeInsets.only(left: 12, top: 0),
+                          child: Column(
+                            children: [
+                              Stack(children: [
+                                Positioned(
+                                  child: Container(
+                                    height: 40,
+                                    width: 40,
+                                    decoration: BoxDecoration(
+                                        shape: BoxShape.circle,
+                                        gradient: LinearGradient(
+                                            begin: Alignment.topRight,
+                                            end: Alignment.bottomLeft,
+                                            colors: [
+                                              Color.fromARGB(255, 221, 0, 74),
+                                              Color.fromARGB(255, 255, 162, 56),
+                                            ])),
+                                  ),
+                                ),
+                                Positioned(
+                                  left: 1,
+                                  top: 1,
+                                  child: Container(
+                                    height: 38,
+                                    width: 38,
+                                    decoration: BoxDecoration(
+                                      shape: BoxShape.circle,
+                                      color: Colors.black,
+                                    ),
+                                  ),
+                                ),
+                                Positioned(
+                                  left: 2,
+                                  top: 2.5,
+                                  child: Image.asset(
+                                    "images/rickpp.png",
+                                    height: 36,
+                                    width: 36,
+                                  ),
+                                )
+                              ]),
+                            ],
+                          ),
+                        ),
+                        SizedBox(
+                          width: 8,
+                        ),
+                        Text(
+                          "ricksanchez",
+                          style: TextStyle(color: Colors.white, fontSize: 16),
+                        ),
+                        SizedBox(
+                          width: MediaQuery.of(context).size.width * 0.50,
+                        ),
+                        Icon(
+                          Icons.more_vert_rounded,
+                          size: 21,
+                          color: Colors.white,
+                        )
+                      ],
+                    ),
+                    SizedBox(
+                      height: 8,
+                    )
+                  ],
+                ),
+              ),
+              SizedBox(
+                height: 2,
+              ),
+              Container(
+                child: Image.asset(
+                  "images/post.jpg",
+                  //height: MediaQuery.of(context).size.height * 0.55,
+                  fit: BoxFit.fill,
+                ),
+              ),
+              Container(
+                color: Colors.black,
+                child: Row(children: [
+                  Image.asset(
+                    "images/fav.jpg",
+                    height: 48,
+                  ),
+                  Image.asset(
+                    "images/comment.jpg",
+                    height: 38,
+                  ),
+                  Image.asset(
+                    "images/send.jpg",
+                    height: 38,
+                  ),
+                  SizedBox(width: MediaQuery.of(context).size.width * 0.48),
+                  Image.asset(
+                    "images/save.jpg",
+                    height: 39,
+                  ),
+                ]),
+              ),
+              Padding(
+                padding: const EdgeInsets.only(left: 14),
+                child: Container(
+                  height: 88,
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      Text(
+                        "1.155 beğenme",
+                        style: TextStyle(
+                            color: Colors.white,
+                            fontSize: 15,
+                            fontWeight: FontWeight.w600),
+                      ),
+                      SizedBox(
+                        height: 3,
+                      ),
+                      Row(
+                        children: [
+                          Text(
+                            "ricksanchez ",
+                            style: TextStyle(
+                                color: Colors.white,
+                                fontSize: 14,
+                                fontWeight: FontWeight.w600),
+                          ),
+                          Text(
+                            "first post",
+                            style: TextStyle(color: Colors.white, fontSize: 15),
+                          )
+                        ],
+                      ),
+                      SizedBox(
+                        height: 4,
+                      ),
+                      Text(
+                        "28 yorumun tümünü gör",
+                        style: TextStyle(color: Colors.grey, fontSize: 14),
+                      ),
+                      SizedBox(
+                        height: 5,
+                      ),
+                      Text(
+                        "48 dakika önce",
+                        style: TextStyle(color: Colors.grey, fontSize: 10),
+                      ),
+                    ],
+                  ),
                 ),
               ),
             ],
