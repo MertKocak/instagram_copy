@@ -668,7 +668,7 @@ class _HomePageState extends State<HomePage> {
               ),
               Container(
                 child: Image.asset(
-                  "images/post.jpg",
+                  "images/rickp2.jpg",
                   //height: MediaQuery.of(context).size.height * 0.55,
                   fit: BoxFit.fill,
                 ),
@@ -722,7 +722,7 @@ class _HomePageState extends State<HomePage> {
                                 fontWeight: FontWeight.w600),
                           ),
                           Text(
-                            "first post",
+                            "king of shit!",
                             style: TextStyle(color: Colors.white, fontSize: 15),
                           )
                         ],
